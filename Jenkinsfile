@@ -2,6 +2,7 @@
 
 pipeline {
     agent any
+
     environment {
         IMAGE = "nani4545/microservice-demo:${env.BUILD_NUMBER}"
     }
@@ -12,7 +13,8 @@ pipeline {
                 git branch: 'main', credentialsId: 'github-creds', url: 'https://github.com/nani454554/maven.git'
             }
         }
-        stage('Build-') {
+
+        stage('List Files') {
             steps {
                 sh 'ls -la'
             }

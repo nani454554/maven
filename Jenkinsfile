@@ -2,9 +2,9 @@
 
 pipeline {
     agent any
-    // environment {
-    //     IMAGE = "nani4545/microservice-demo:${env.BUILD_NUMBER}"
-    // }
+    environment {
+        IMAGE = "nani4545/microservice-demo:${env.BUILD_NUMBER}"
+    }
 
     stages {
         stage('Clone') {

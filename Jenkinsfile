@@ -7,6 +7,11 @@ pipeline {
     }
 
     stages {
+        stage('Clone') {
+            steps {
+                git credentialsId: 'github-creds', url: 'https://github.com/your-org/your-java-app.git'
+            }
+        }
         stage('Build') {
             steps {
                 buildJavaApp()

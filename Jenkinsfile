@@ -12,7 +12,7 @@ pipeline {
                 git branch: 'main', credentialsId: 'github-creds', url: 'https://github.com/nani454554/maven.git'
             }
         }
-        stage('Build') {
+        stage('Build-') {
             steps {
                 sh 'ls -la'
             }

@@ -14,15 +14,16 @@ pipeline {
             }
         }
 
-        stage('List Files') {
-            steps {
-                sh 'ls -la'
-            }
-        }
+
 
         stage('Build') {
             steps {
                 buildJavaApp()
+            }
+        }
+                stage('List Files') {
+            steps {
+                sh 'ls -la'
             }
         }
 

@@ -3,7 +3,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = "yourdockerhub/microservice-demo:${env.BUILD_NUMBER}"
+        IMAGE = "nani4545/microservice-demo:${env.BUILD_NUMBER}"
     }
 
     stages {
